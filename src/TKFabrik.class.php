@@ -5,11 +5,10 @@ class TKFabrik extends Fabrik {
 	}
 	public function erzeuge($produkt) {
 		if(strcmp($produkt, "TK-Spinat") == 0) {
-			new TKSpinat();
+			return new TKSpinat();
 		}
 		if(strcmp($produkt, "TK-Maronireis") == 0) {
 			return new TKMaronireis();
 		}
-		return null;
 	}
 }
