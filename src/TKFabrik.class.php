@@ -1,7 +1,7 @@
 <?php
 class TKFabrik extends Fabrik {
 	public function __construct() {
-		$this->fabrikArt = "Elektronikprodukte";
+		$this->fabrikArt = "Tiefkühlprodukte";
 	}
 	public function erzeuge($produkt) {
 		if(strcmp($produkt, "TK-Spinat") == 0) {
