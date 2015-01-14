@@ -1,11 +1,11 @@
 <?php 
 abstract class Artikel {
-	private  $nummer;
-	protected  $kategorie;
+	private $nummer;
+	private $kategorie;
 	private $bezeichnung;
-	private  $preis;
-	private  $gewicht;
-	private  $einheit;
+	private $preis;
+	private $gewicht;
+	private $einheit;
 	private $menge;
 	public function __construct($nummer, $bezeichnung, $preis, $menge=1, $einheit=null, $gewicht=1){
 		$this->nummer=$nummer;
@@ -48,9 +48,9 @@ abstract class Artikel {
 	public function  setGewicht($gewicht) {
 		$this->gewicht = $gewicht;
 	}
-	/* mengenEinheit */
+	/* einheit */
 	public function getEinheit() {
-		return $this->mengenEinheit;
+		return $this->einheit;
 	}
 	public function setEinheit(Einheiten $einheit) {
 		$this->einheit = $einheit;
