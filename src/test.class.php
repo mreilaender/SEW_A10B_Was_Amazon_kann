@@ -23,6 +23,7 @@ $fabrik->bezahlen();
 $fabrik->verpacken();
 $fabrik->verschicken();
 
-$fabrik->zeigeEinkaufswagen();
-$fabrik2->zeigeEinkaufswagen();
+
+echo "Tiefkühl Fabrik: <br/>" . $fabrik->zeigeEinkaufswagen();
+echo "Elektronik Fabrik: " . $fabrik2->zeigeEinkaufswagen();
 ?>
