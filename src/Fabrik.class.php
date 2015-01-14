@@ -60,7 +60,7 @@ abstract class Fabrik {
 				  . " | " . $artikel->getBezeichnung()
 				  . " | Preis: " . $artikel->getPreis()
 				. "<br/>";
-				echo "test";
+// 				echo "test";
 			}
 			$out .= "Gesamtkosten: " . $kosten . "<br/>";
 			if (!($this->bezahlt))
@@ -76,7 +76,7 @@ abstract class Fabrik {
 			else
 				$out .= "Die Produkte wurden verschickt";
 			
-			$out = "<br/><br/><br/>";
+			$out .= "<br/><br/><br/>";
 		}
 		return $out;
 	}

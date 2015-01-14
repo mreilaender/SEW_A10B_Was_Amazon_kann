@@ -9,6 +9,7 @@ function __autoload($class_name) {
 }
 $fabrik = new TKFabrik();
 $fabrik->add($fabrik->erzeuge("TK-Spinat"));
+echo $fabrik->erzeuge("TK-Spinat")->getEinheit();
 $fabrik->add($fabrik->erzeuge("TK-Maronireis"));
 $fabrik->add($fabrik->erzeuge("TK-Spinat"));
 
