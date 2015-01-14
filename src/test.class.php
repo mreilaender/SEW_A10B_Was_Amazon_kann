@@ -9,12 +9,13 @@ function __autoload($class_name) {
 }
 $fabrik = new TKFabrik();
 $fabrik->add($fabrik->erzeuge("TK-Spinat"));
-echo $fabrik->erzeuge("TK-Spinat")->getEinheit();
 $fabrik->add($fabrik->erzeuge("TK-Maronireis"));
 $fabrik->add($fabrik->erzeuge("TK-Spinat"));
 
 $fabrik2 = new ElektronikFabrik();
 $fabrik2->add($fabrik2->erzeuge("USB_Stick"));
+$fabrik2->add($fabrik2->erzeuge("USB-Computermaus laseragetastet"));
+$fabrik2->add($fabrik2->erzeuge("USB-Computertastatur 102 Tasten"));
 
 $fabrik2->bezahlen();
 $fabrik2->verpacken();
