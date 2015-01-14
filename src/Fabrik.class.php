@@ -56,7 +56,7 @@ abstract class Fabrik {
 			foreach ($this->einkaufsWagen as $artikel) {
 				$kosten += $artikel->getPreis();
 				$out .= "Kategorie: " . $artikel->getKategorie() . ": " . $artikel->getNummer ()
-				  . " | " . $artikel->getMenge() . $artikel->getMengenEinheit()
+				  . " | " . $artikel->getMenge() . $artikel->getEinheit()
 				  . " | " . $artikel->getBezeichnung()
 				  . " | Preis: " . $artikel->getPreis()
 				. "<br/>";
