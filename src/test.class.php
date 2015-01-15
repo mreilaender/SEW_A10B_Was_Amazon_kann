@@ -20,7 +20,7 @@ $fabrik2->add($fabrik2->erzeuge("USB-Computertastatur 102 Tasten"));
 $fabrik3 = new SpezialFabrik();
 $fabrik3->add($fabrik3->erzeuge("FrischerSalat"));
 $fabrik3->add($fabrik2->erzeuge("USB_Stick"));
-$fabrik3->add($fabrik2->erzeuge("USB-Computermaus laseragetastet"));
+$fabrik3->add($fabrik2->erzeuge("USB-Computertastatur 102 Tasten"));
 
 $fabrik->bezahlen();
 $fabrik->verpacken();

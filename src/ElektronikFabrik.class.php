@@ -11,7 +11,7 @@ class ElektronikFabrik extends Fabrik {
 			return new USB_Computertastatur_102Tasten();
 		}
 		if (strcmp($produkt, "USB-Computermaus laserabgetastet")) {
-			return new USB-Computermaus_laser();
+			return new USB_Computermaus_laser();
 		}
 		return $tmp;
 	}
