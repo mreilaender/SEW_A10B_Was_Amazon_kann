@@ -17,15 +17,25 @@ $fabrik2->add($fabrik2->erzeuge("USB_Stick"));
 $fabrik2->add($fabrik2->erzeuge("USB-Computermaus laseragetastet"));
 $fabrik2->add($fabrik2->erzeuge("USB-Computertastatur 102 Tasten"));
 
-$fabrik2->bezahlen();
-$fabrik2->verpacken();
-$fabrik2->verschicken();
+$fabrik3 = new SpezialFabrik();
+$fabrik3->add($fabrik3->erzeuge("FrischerSalat"));
+$fabrik3->add($fabrik2->erzeuge("USB_Stick"));
+$fabrik3->add($fabrik2->erzeuge("USB-Computermaus laseragetastet"));
 
 $fabrik->bezahlen();
 $fabrik->verpacken();
 $fabrik->verschicken();
 
+$fabrik2->bezahlen();
+$fabrik2->verpacken();
+$fabrik2->verschicken();
+
+$fabrik3->bezahlen();
+$fabrik3->verpacken();
+$fabrik3->verschicken();
+
 
 echo "Tiefkühl Fabrik: <br/>" . $fabrik->zeigeEinkaufswagen();
 echo "Elektronik Fabrik: " . $fabrik2->zeigeEinkaufswagen();
+echo "Spezial Fabrik: " . $fabrik3->zeigeEinkaufswagen();
 ?>

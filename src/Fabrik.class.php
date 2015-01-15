@@ -66,15 +66,15 @@ abstract class Fabrik {
 			if (!($this->bezahlt))
 				$out .= "Die Produkte wurden noch nicht bezahlt<br/>";
 			else
-				$out .= "Die Produkte wurden bezahlt<br>";
+				$out .= "Die Produkte wurden bezahlt<br/>";
 			if (!($this->verpackt))
-				$out .= "Die Produkte wurden noch nicht verpackt";
+				$out .= "Die Produkte wurden noch nicht verpackt<br/>";
 			else
-				$out .= "Die Produkte wurden verpackt";
+				$out .= "Die Produkte wurden verpackt<br/>";
 			if (!($this->verschickt))
-				$out .= "Die Produkte wurden noch nicht verschickt";
+				$out .= "Die Produkte wurden noch nicht verschickt<br/>";
 			else
-				$out .= "Die Produkte wurden verschickt";
+				$out .= "Die Produkte wurden verschickt<br/>";
 			
 			$out .= "<br/><br/><br/>";
 		}
